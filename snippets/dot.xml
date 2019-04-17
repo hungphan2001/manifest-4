@@ -4,7 +4,11 @@
 	<remote  name="los"
            fetch="https://github.com/LineageOS" 
            revision="refs/heads/lineage-16.0" />
-
+		   
+    <remote  name="pie"
+           fetch="https://github.com/Dot-Extended" 
+           revision="refs/heads/pie" />
+		   
   <project path="manifest" name="manifest" remote="dot" />
   <project path="build/make" name="android_build" remote="dot" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -28,7 +32,7 @@
   <!-- project path="external/chromium-webview" name="android_external_chromium-webview" groups="pdk" remote="los" clone-depth="1" />  -->
   <!-- project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" groups="pdk" remote="dot" /> -->
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="dot" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="dot" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="pie" />
   <project path="frameworks/compile/mclinker" name="android_frameworks_compile_mclinker" groups="pdk,tradefed" remote="dot" />
   <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="dot" />
   <project path="frameworks/support" name="android_frameworks_support" groups="pdk" remote="dot" />
@@ -41,7 +45,7 @@
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="dot" />
   <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" groups="pdk-fs" remote="dot" />
   <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="dot" />
-  <project path="packages/apps/DotExtras" name="android_packages_apps_DotExtras" remote="dot" />
+  <project path="packages/apps/DotExtras" name="android_packages_apps_DotExtras" remote="pie" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="dot" />
   <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="dot" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="dot" />
@@ -51,10 +55,10 @@
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs" remote="dot" />
   <project path="packages/apps/MusicFX" name="android_packages_apps_MusicFX" remote="dot" />
   <project path="packages/apps/Snap" name="android_packages_apps_Snap" groups="pdk-fs" remote="dot" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="dot" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="pie" />
   <project path="packages/apps/SmartNav" name="android_packages_apps_SmartNav" remote="dot" />
   <project path="packages/apps/SmartNavSettings" name="android_packages_apps_SmartNavSettings" remote="dot" />
-  <project path="packages/apps/SystemUpdates" name="android_packages_apps_SystemUpdates" remote="dot" />
+  <project path="packages/apps/SystemUpdates" name="android_packages_apps_SystemUpdates" remote="pie" />
   <project path="packages/apps/WeatherClient" name="android_packages_apps_WeatherClient" remote="dot" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="los" />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" groups="pdk-cw-fs,pdk-fs" remote="dot" />
@@ -80,7 +84,7 @@
   <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="los" />
   <project path="system/update_engine" name="android_system_update_engine" groups="pdk" remote="dot" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="dot" />
-  <project path="vendor/dot" name="android_vendor_dot" remote="dot" />
+  <project path="vendor/dot" name="android_vendor_dot" remote="pie" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="dot" />
 
   <!-- HardWare QCOM -->

@@ -39,20 +39,20 @@ To get started with the building process, you'll need to get familiar with [Git 
 To initialize your local repository, use a command like this:
 
 ```bash
-    repo init -u git://github.com/DotOS/manifest.git -b dot-p
+    repo init -u git://github.com/Dot-Extended/manifest.git -b pie --depth=1
 ```
 
 Then to sync up:
 ================
 
 ```bash
-    repo sync -c -jx --force-sync --no-clone-bundle --no-tags
+    repo sync -c -j8 --force-sync --no-clone-bundle --no-tags
 ```
 
 Additionally, you can define the number of parallel download repo should do:
 
 ```bash
-    repo sync -f -jX --force-sync --no-clone-bundle --no-tags ( X is the number of parallel download repo should do choose depending on your cpu )
+    repo sync -f -j8 --force-sync --no-clone-bundle --no-tags
 ```
 
 Compilation of Dot OS:
